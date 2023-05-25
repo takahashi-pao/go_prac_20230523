@@ -58,7 +58,7 @@ func main() {
 		return x*10 + 1
 	}
 	needFloat := func(x float64) float64 {
-		return x * 0.1
+		return x * 0.1 * 1
 	}
 	fmt.Println(needInt(Small), needFloat(Big))
 }
