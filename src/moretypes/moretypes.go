@@ -57,6 +57,7 @@ func ArrayTest() {
 		{6, "true"},
 	}
 
+	// modelのような使い方？
 	data = append(data, []struct {
 		Id   int
 		Name string
