@@ -14,6 +14,10 @@ type StructTest2 []struct {
 	Name string
 }
 
+type Vertex struct {
+	Lat, Long float64
+}
+
 func main() {
 	pointerPrac1()
 	s := StructTest1{2, 1}
@@ -71,4 +75,14 @@ func ArrayTest() {
 			fmt.Printf("Id: %d, Name: %s\n", item.Id, item.Name)
 		}
 	}
+}
+
+var m map[string]Vertex
+
+func Maps() {
+	m = make(map[string]Vertex)
+	m["Bell Labs"] = Vertex{
+		40.64755, -44.37485,
+	}
+	fmt.Println(m["Bell Labs"])
 }
